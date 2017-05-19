@@ -35,6 +35,6 @@ CATT=function(binomial,ordinal,table=NULL){
   Z=as.numeric(Z)
   P=pnorm(q=abs(Z),lower.tail=FALSE)
   structure(list(method="The Cochran-Armitage Trend Test",
-                 statistic=c("Z"=round(Z,3)),p.value=round(P,3),
+                 statistic=c("Z"=round(Z,3)),p.value=round(P*2,4),
                  data.name=dname),class="htest")
 }

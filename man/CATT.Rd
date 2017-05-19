@@ -2,7 +2,7 @@
 \alias{CATT}
 \title{The Cochran-Armitage Trend Test}
 \description{
-The Cochran-Armitage trend test can be applied to a two by k contingency table. The test statistic (Z) and p-value will be reported. A linear trend in the frequencies will be calculated, because the weights (0,1,2) will be used by default.
+This function conducts the Cochran-Armitage trend test to a 2 by k contingency table. It will report the test statistic (Z) and p-value. A linear trend in the frequencies will be calculated, because the weights (0,1,2) will be used by default.
 }
 \keyword{Cochran-Armitage; Trend Test}
 \usage{
@@ -24,8 +24,15 @@ Zhicheng Du<dgdzc@hotmail.com>, Yuantao Hao<haoyt@mail.sysu.edu.cn>
 Please feel free to contact us, if you have any advice and find any bug!
 
 Reference:
+
 1. Cochran, WG (1954). Some methods for strengthening the common chi-squared tests. Biometrics. International Biometric Society. 10 (4): 417-451.
+
 2. Armitage, P (1955). Tests for Linear Trends in Proportions and Frequencies. Biometrics. International Biometric Society. 11 (3): 375-386.
+
+Update:
+
+Version 0.2.0: The p value of two side was specified.
+
 }
 \examples{
 # type of data is variable
